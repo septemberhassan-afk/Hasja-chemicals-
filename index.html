@@ -1,0 +1,24 @@
+<!-- Main Theme Styles -->
+<style>
+  body { background-color: #000000; color: #D4AF37; font-family: 'Inter', sans-serif; }
+  .gold-button { background: linear-gradient(45deg, #D4AF37, #F9E29C); color: #000; font-weight: bold; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; }
+  .card { border: 1px solid #D4AF37; background-color: #1a1a1a; padding: 20px; border-radius: 10px; text-align: center; }
+  .input-field { width: 100%; padding: 10px; margin: 10px 0; background: #222; border: 1px solid #D4AF37; color: #fff; }
+</style>
+
+<!-- Product Logic Example -->
+<div class="card">
+  <img src="shampoo-placeholder.jpg" alt="Shampoo" style="width:100%">
+  <h3>Premium Shampoo (200ml)</h3>
+  <p>Price: 500 PKR</p>
+  <button class="gold-button" onclick="addToCart('Shampoo')">Add to Cart</button>
+</div>
+
+<!-- Order Logic -->
+<script>
+  function sendToWhatsApp() {
+    const phone = "923145197557";
+    const message = "Hello Zakai Chemicals, I would like to order...";
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+  }
+</script>
